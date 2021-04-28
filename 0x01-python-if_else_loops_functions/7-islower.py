@@ -1,7 +1,6 @@
+#!/usr/bin/python3
 def islower(c):
-    """function to check lowercases"""
-    x = ord(c)
-    if (x >= 97 and x <= 122):
-        return True
+    if (96 < ord(c) < 123):
+        return (True)
     else:
-        return False
+        return (False)
