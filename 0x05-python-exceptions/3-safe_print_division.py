@@ -5,7 +5,7 @@ def safe_print_division(a, b):
         total = a / b
     except ZeroDivisionError:
         total = None
-        return total
+        return None
     finally:
         print("Inside reult: {}".format(total))
     return total
