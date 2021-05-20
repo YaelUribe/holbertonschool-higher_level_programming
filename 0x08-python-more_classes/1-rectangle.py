@@ -5,6 +5,7 @@
 class Rectangle:
     """Rectangle Class attributes and methods"""
     def __init__(self, width=0, height=0):
+        """Defining private attributes"""
         self.__height = height
         self.__width = width
         if width < 0:
