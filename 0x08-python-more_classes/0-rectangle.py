@@ -3,5 +3,5 @@
 
 
 class Rectangle:
-    ""Empty class rectangle""
-    pass
+    """Empty class rectangle"""
+    pass  # Empty block
