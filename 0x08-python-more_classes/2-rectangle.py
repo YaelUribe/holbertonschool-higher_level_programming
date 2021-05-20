@@ -32,8 +32,13 @@ class Rectangle:
         elif type(value) != int:
             raise ValueError("height must be an integer")
 
-	def area(self):
-		"""Method to determine area of our rectangle"""
+    def area(self):
+        """Method to determine area of our rectangle"""
+        return self.__width * self.__height
 
-	def perimeter(self):
-		"""Method to determine perimeter of our rectangle"""
+    def perimeter(self):
+        """Method to determine perimeter of our rectangle"""
+        if self.__width == 0 or self.__height == 0:
+            return 0
+        else:
+            return self.__width * 2 + self.__height * 2
