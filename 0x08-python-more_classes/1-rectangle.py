@@ -6,22 +6,8 @@ class Rectangle:
     """Rectangle Class attributes and methods"""
     def __init__(self, width=0, height=0):
         """Defining private attributes"""
-        self.width = width
         self.height = height
-
-    @property
-    def width(self):
-        """caca"""
-        return self.__width
-
-    @width.setter
-    def width(self, value):
-        """caca"""
-        if type(value) != int:
-            raise ValueError("width must be an integer")
-        if value < 0:
-            raise TypeError("width must be >= 0")
-        self.__width = value
+        self.width = width
 
     @property
     def height(self):
@@ -36,3 +22,17 @@ class Rectangle:
         if value < 0:
             raise TypeError("height must be >= 0")
         self.__height = value
+
+    @property
+    def width(self):
+        """caca"""
+        return self.__width
+
+    @width.setter
+    def width(self, value):
+        """caca"""
+        if type(value) != int:
+            raise ValueError("width must be an integer")
+        if value < 0:
+            raise TypeError("width must be >= 0")
+        self.__width = value
