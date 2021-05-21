@@ -57,7 +57,8 @@ class Rectangle:
             nu_string += "\n"
         return nu_string
 
-	def __repr__(self):
-		"""Defining repr to print a string representation
-		of the triangle"""
-		return Rectangle(" + str(self.__widht) +", " + str(self.__height) +")
+    def __repr__(self):
+        """Defining repr to print a string representation
+        of the triangle"""
+        return "Rectangle(" + str(self.__width) + ", "\
+            + str(self.__height) + ")"
