@@ -3,22 +3,22 @@
 
 
 class Rectangle:
-
+    """Rectangle Class attributes and methods"""
     def __init__(self, width=0, height=0):
-        self.__height = height
-        self.__width = width
-
+        """Defining private attributes"""
+        self.width = width
+        self.height = height
     @property
     def width(self):
         return self.__width
 
     @width.setter
     def width(self, value):
-        self.__width = value
         if value < 0:
-            raise TypeError("width must be >= 0")
+            raise ValueError("width must be >= 0")
         elif type(value) != int:
-            raise ValueError("width must be an integer")
+            raise TypeError("width must be an integer")
+        self.__width = value
 
     @property
     def height(self):
@@ -26,11 +26,11 @@ class Rectangle:
 
     @height.setter
     def height(self, value):
-        self.__height = value
         if value < 0:
-            raise TypeError("height must be >= 0")
+            raise ValueError("height must be >= 0")
         elif type(value) != int:
-            raise ValueError("height must be an integer")
+            raise TypeError("height must be an integer")
+        self.__height = value
 
     def area(self):
         """Method to determine area of our rectangle"""
