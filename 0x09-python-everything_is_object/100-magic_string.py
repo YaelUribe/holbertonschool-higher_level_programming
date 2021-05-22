@@ -1,3 +1,4 @@
 #!/usr/bin/python3
-def magic_string():
-    magic_string.counter += 1
+def magic_string(count=[]):
+    count += ["Holberton"]
+    return ", ".join(count)
