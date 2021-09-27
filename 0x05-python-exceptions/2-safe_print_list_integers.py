@@ -1,13 +1,13 @@
 #!/usr/bin/python3
 def safe_print_list_integers(my_list=[], x=0):
-    count = 0
-    for y in range(x):
+    total = 0
+    for n in range(x):
         try:
-            print("{:d}".format(my_list[y]), end="")
-            count += 1
+            print("{:d}".format(my_list[n]), end="")
+            total += 1
         except TypeError:
             continue
         except ValueError:
             continue
     print()
-    return count
+    return total
