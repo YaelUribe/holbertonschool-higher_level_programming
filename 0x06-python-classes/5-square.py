@@ -27,6 +27,12 @@ class Square:
         elif value < 0:
             raise ValueError("size must be >= 0")
 
-	def my_print(self):
-		"""Public instance Method to print a Square"""
-		
+    def my_print(self):
+        """Public instance Method to print a Square"""
+        if self.__size == 0:
+            print()
+        else:
+            for x in range(self.__size):
+                for y in range(self.__size):
+                    print("#", end="")
+                print()
