@@ -4,8 +4,9 @@
 
 class Square:
     """Class Square"""
-    def __init__(self, size=0):
+    def __init__(self, size=0, position=(0, 0)):
         self.__size = size
+		self.__position = position
         if type(size) is not int:
             raise TypeError("size must be an integer")
         elif size < 0:
@@ -18,6 +19,8 @@ class Square:
     @property
     def size(self):
         return self.__size
+	def position(self):
+		return self.__position
 
     @size.setter
     def size(self, value):
@@ -26,6 +29,12 @@ class Square:
             raise TypeError("size must be an integer")
         elif value < 0:
             raise ValueError("size must be >= 0")
+
+	@position.setter
+	def position(self, value):
+		self.__position = value
+		if type(value) is not tuple:
+			raise TypeError("position must be a tuple of 2 positive integers")
 
     def my_print(self):
         """Public instance Method to print a Square"""
