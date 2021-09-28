@@ -13,11 +13,12 @@ class Square:
 
     def area(self):
         """Public Method to calculate area of a Square"""
-        self.__size *= self.__size
-        return self.__size
+        return self.__size * self.__size
+
     @property
     def size(self):
         return self.__size
+
     @size.setter
     def size(self, value):
         self.__size = value
