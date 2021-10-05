@@ -1,0 +1,49 @@
+================
+How to use "0-add_integer.py"
+================
+
+Using "add_integer"
+
+Operations:
+----------
+1) Import file:
+	>>> add_integer = __import__('0-add_integer').add_integer
+
+2) Should return the addition of two integers:
+	>>> add_integer(2, 4)
+	6
+
+3) Should return the addition of an integer and a float:
+	>>> add_integer(5, 20.001)
+	25
+4) a must be an integer:
+	>>> add_integer("notint", 2)
+	Traceback (most recent call last):
+	...
+	TypeError: a must be an integer
+
+5) b must be an integer:
+	>>> add_integer(25, "cocktail")
+	Traceback (most recent call last):
+	...
+	TypeError: b must be an integer
+
+6) b is equal to 98 by default:
+	>>> add_integer(102)
+	200
+
+7) It's able to work with negative numbers:
+	>>> add_integer(101, -1)
+	100
+
+8) Won't work if uses 'NaN' float:
+	>>> add_integer(float('nan'), 2)
+	Traceback (most recent call last):
+	...
+	ValueError: cannot convert float NaN to integer
+
+9) Also can't convert 'inf float:
+	>>> add_integer(float('inf'), 2)
+	Traceback (most recent call last):
+	...
+	OverflowError: cannot convert float infinity to integer
