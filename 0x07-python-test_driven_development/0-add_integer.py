@@ -23,9 +23,9 @@ def add_integer(a, b=98):
         b = int(b)
 
     # Variables must be integers
-    if not isinstance(a, int):
+    if not isinstance(a, int) or isinstance(a, bool):
         raise TypeError("a must be an integer")
-    elif not isinstance(b, int):
+    elif not isinstance(b, int) or isinstance(b, bool):
         raise TypeError("b must be an integer")
 
     # now we can return the given values as the product of an addition
