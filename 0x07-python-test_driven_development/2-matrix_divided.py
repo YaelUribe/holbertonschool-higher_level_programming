@@ -49,5 +49,5 @@ def matrix_divided(matrix, div):
     # In an empty list store the result of each division
     nu_matrix = []
     for rows in matrix:
-            nu_matrix.append([round(column/div, 2) for column in rows])
+            nu_matrix.append([round((column/div), 2) for column in rows])
     return nu_matrix
