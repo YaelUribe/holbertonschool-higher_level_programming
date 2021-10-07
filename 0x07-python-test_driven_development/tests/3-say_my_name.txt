@@ -28,7 +28,7 @@ Operations:
 
 5) last_name is set to empty strin by default:
 	>>> say_my_name("Christian")
-	My name is Christian
+	My name is Christian 
 
 6) There must be at least one argument:
 	>>> say_my_name()
