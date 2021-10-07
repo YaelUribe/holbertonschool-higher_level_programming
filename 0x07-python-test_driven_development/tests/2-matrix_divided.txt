@@ -57,3 +57,16 @@ Operations:
 	Traceback (most recent call last):
 		...
 	TypeError: div must be a number
+
+7) should return an empty list if matrix is empty:
+	>>> matrix_divided([], 3)
+	[]
+
+8) div cannot be float('inf'):
+	>>> matrix = [
+	... [121, 232, 343],
+	... [454, 565, 676]
+	... ]
+	>>> matrix_divided(matrix, float('inf'))
+	[[0.0, 0.0, 0.0], [0.0, 0.0, 0.0]]
+
