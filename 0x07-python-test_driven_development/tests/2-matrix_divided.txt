@@ -16,7 +16,7 @@ Operations:
 	... [336, 123, 88]
 	... ]
 	>>> matrix_divided(matrix, 6)
-	[0.33, 1.0, 0.67, 56.0, 20.5, 14.67]
+	[[0.33, 1.0, 0.67], [56.0, 20.5, 14.67]]
 
 3) All elements in matrix must be integers or floats:
 	>>> matrix = [
