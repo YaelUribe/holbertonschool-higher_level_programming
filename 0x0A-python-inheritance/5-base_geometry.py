@@ -6,4 +6,4 @@ Module - Empty class BaseGeometry
 
 class BaseGeometry():
     """empty classs BaseGeometry"""
-    pass # empty
+    pass  # empty
