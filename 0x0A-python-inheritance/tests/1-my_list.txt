@@ -32,3 +32,6 @@ Operations:
 	>>> issubclass(MyList, list)
 	True
 
+7) MyList isinstance of list:
+	>>> isinstance(MyList([]), list)
+    True
