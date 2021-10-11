@@ -12,6 +12,7 @@ class BaseGeometry():
         meanwhile raises an Exception
         """
         raise Exception("area() is not implemented")
+
     def integer_validator(self, name, value):
         """
         function to validate a given value
@@ -21,21 +22,22 @@ class BaseGeometry():
         if value <= 0:
             raise ValueError("{} must be greater than 0".format(name))
 
+
 class Rectangle(BaseGeometry):
-	"""class Rectangle that inheritates from
-		BaseGeometry class
-	"""
-	def __init__(self, width, height):
-		"""instantiation for Rectangle"""
-		self.integer_validator("width", width)
-		self.__width = width
-		self.integer_validator("height", height)
-		self.__height = height
+    """class Rectangle that inheritates from
+        BaseGeometry class
+    """
+    def __init__(self, width, height):
+        """instantiation for Rectangle"""
+        self.integer_validator("width", width)
+        self.__width = width
+        self.integer_validator("height", height)
+        self.__height = height
 
-	def area(self):
-		"""re defining the area function"""
-		return self.__width * self.__height
+    def area(self):
+        """re defining the area function"""
+        return self.__width * self.__height
 
-	def __str__(self):
-		"""print the message requested"""
-		return ("[Rectangle] {:d}/{:d}".format(self.__width, self.__height))
+    def __str__(self):
+        """print the message requested"""
+        return ("[Rectangle] {:d}/{:d}".format(self.__width, self.__height))
