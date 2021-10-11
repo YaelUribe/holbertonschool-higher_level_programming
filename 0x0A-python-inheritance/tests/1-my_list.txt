@@ -1,5 +1,5 @@
 ================
-How to use "0-my_list.py"
+How to use "1-my_list.py"
 ================
 
 Using "my_list"
@@ -15,3 +15,20 @@ Operations:
 	>>> my_list.append(4)
 	>>> print(my_list)
 	[1, 4]
+
+3) sorts a list:
+	>>> MyList.print_sorted([7, 88, 23, 76])
+	[7, 23, 76, 88]
+
+4) For empty lists:
+	>>> MyList.print_sorted([])
+	[]
+
+5) Sorts lists on integers, including negative ones:
+	>>> MyList.print_sorted([-5, 4, 13, -1, -4, -13, 5, 0, 1])
+	[-13, -5, -4, -1, 0, 1, 4, 5, 13]
+
+6) MyList inherits from list:
+	>>> issubclass(MyList, list)
+	True
+
