@@ -10,7 +10,7 @@ Operations:
     >>> MyList = __import__('1-my_list').MyList
 
 2) Add elements:
-	>>> my_list = mylist()
+	>>> my_list = MyList()
 	>>> my_list.append(1)
 	>>> my_list.append(4)
 	>>> print(my_list)
