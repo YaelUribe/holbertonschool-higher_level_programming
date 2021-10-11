@@ -38,4 +38,4 @@ class Rectangle(BaseGeometry):
 
 	def __str__(self):
 		"""print the message requested"""
-		print("[Rectangle] {:d}/{:d}".format(self.__width, self.__height))
+		return ("[Rectangle] {:d}/{:d}".format(self.__width, self.__height))
