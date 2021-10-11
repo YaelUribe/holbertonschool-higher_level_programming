@@ -1,0 +1,17 @@
+================
+How to use "0-my_list.py"
+================
+
+Using "my_list"
+
+Operations:
+----------
+1) Import file:
+    >>> MyList = __import__('1-my_list').MyList
+
+2) Add elements:
+	>>> my_list = mylist()
+	>>> my_list.append(1)
+	>>> my_list.append(4)
+	>>> print(my_list)
+	[1, 4]
