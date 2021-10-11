@@ -45,12 +45,12 @@ class Rectangle(BaseGeometry):
 
 class Square(Rectangle):
     """Class Square that inheritates from
-        Rectangle class
+        Rectancle class
     """
     def __init__(self, size):
-        
-        Rectangle.
-
+        self.integer_validator("size", size)
+        Rectangle.__init__(self, width=size, height=size)
+        self.__size = size
 
     def area(self):
         """Redefining area function to work with a square"""
