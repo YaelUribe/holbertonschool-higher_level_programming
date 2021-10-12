@@ -6,5 +6,5 @@ Module: append_write
 
 def append_write(filename="", text=""):
     with open(filename, 'a', encoding="utf-8") as f:
-        str1 = str(text)
-        return f.write(str1)
+        total = f.write(text)
+        return total
