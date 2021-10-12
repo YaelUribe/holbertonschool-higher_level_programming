@@ -48,9 +48,10 @@ class Square(Rectangle):
         Rectancle class
     """
     def __init__(self, size):
+        """instantiation of the class Square"""
         self.integer_validator("size", size)
-        super().__init__(size, size)
         self.__size = size
+        super().__init__(size, size)
 
     def area(self):
         """Redefining area function to work with a square"""
