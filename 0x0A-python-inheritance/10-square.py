@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Module - class BaseGeometry
+Module - class BaseGeometry and subclasses
 """
 
 
@@ -55,4 +55,4 @@ class Square(Rectangle):
 
     def area(self):
         """Redefining area function to work with a square"""
-        return self.__size * self.__size
+        return self.__size ** 2
