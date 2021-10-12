@@ -1,0 +1,44 @@
+================
+How to use "7-base_geometry.py"
+================
+
+Using "base_geometry"
+
+Operations:
+----------
+
+1) import module:
+	>>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
+
+2) when integer is == 0:
+	>>> BaseGeometry().integer_validator("width", 0)
+	Traceback (most recent call last):
+		...
+	ValueError: width must be greater than 0
+
+3) when integer is negative:
+	>>> BaseGeometry().integer_validator("width", -55)
+	Traceback (most recent call last):
+		...
+	ValueError: width must be greater than 0
+
+4) if there's no value argument:
+	>>> BaseGeometry().integer_validator("width")
+	Traceback (most recent call last):
+		...
+	TypeError: integer_validator() missing 1 required positional argument: 'value'
+
+5) If value is not an integer:
+	>>> BaseGeometry().integer_validator("Hoyo", "culo")
+	Traceback (most recent call last):
+		...
+	TypeError: Hoyo must be an integer
+
+6) If there's not String value:
+	>>> BaseGeometry().integer_validator("", 666)
+
+7) Excess of arguments:
+	>>> BaseGeometry().integer_validator("Judas", 666, 2, 4)
+	Traceback (most recent call last):
+		...
+	TypeError: integer_validator() takes 3 positional arguments but 5 were given
