@@ -36,5 +36,6 @@ Operations:
 	>>> type(MyList([]))
 	<class '1-my_list.MyList'>
 
-8) >>> isinstance(MyList([]), list)
+8) MyList is instance of list:
+	>>> isinstance(MyList([]), list)
 	True
