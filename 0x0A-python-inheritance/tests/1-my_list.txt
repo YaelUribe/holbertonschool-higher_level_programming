@@ -32,6 +32,9 @@ Operations:
 	>>> issubclass(MyList, list)
 	True
 
-7) MyList isinstance of list:
-	>>> isinstance(MyList([]), list)
-    True
+7) type of MyList is a class contained in a file:
+	>>> type(MyList([]))
+	<class '1-my_list.MyList'>
+
+8) >>> isinstance(MyList([]), list)
+	True
