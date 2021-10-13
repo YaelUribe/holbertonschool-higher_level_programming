@@ -17,4 +17,4 @@ class Student():
         Method to retrieve a dictionary representation
         of a Student instance
         """
-        return dict(self)
+        return self.__dict__
