@@ -79,8 +79,12 @@ class Rectangle(Base):
     def display(self):
         """Function to print in STDOUT
         rectangle instance with "#" Character"""
+        space = self.x
+        nuline = self.y
+        while nuline:
+            print('\n' * (nuline - 1))
         for g in range(self.height):
-            print("#"*self.width)
+            print(" "*space + "#"*self.width)
 
     def __str__(self):
         """prints the requested message"""
