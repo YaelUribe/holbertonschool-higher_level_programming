@@ -31,3 +31,30 @@ class Square(Rectangle):
         """Size setters"""
         self.width = value
         self.height = value
+
+    def update(self, *args, **kwargs):
+        """
+        Public method to assign an argument to each attribute
+        args: kind of a single pointer to a dictionary
+        kwargs: dictionary with key/value args
+        """
+        if args and len(args) > 0:
+            for index, arg in enumerate(args):
+                if index == 0:
+                    self.id = arg
+                if index == 1:
+                    self.size = arg
+                if index == 2:
+                    self.x = arg
+                if index == 3:
+                    self.y = arg
+        elif kwargs and len(kwargs) > 0:
+            for k, v in kwargs.items():
+                if k == 'id':
+                    self.id = v
+                if k == 'size':
+                    self.size = v
+                if k == 'x':
+                    self.x = v
+                if k == 'y':
+                    self.y = v
