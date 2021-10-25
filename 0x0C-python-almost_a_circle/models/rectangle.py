@@ -81,7 +81,7 @@ class Rectangle(Base):
         rectangle instance with "#" Character"""
         space = self.x
         nuline = self.y
-        while nuline:
+        if nuline != 0:
             print('\n' * (nuline - 1))
         for g in range(self.height):
             print(" "*space + "#"*self.width)
