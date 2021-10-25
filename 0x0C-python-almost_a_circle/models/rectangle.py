@@ -94,9 +94,13 @@ class Rectangle(Base):
                                                                   self.width,
                                                                   self.height)
 
-    def update(self, *args):
-        """Public method to assign an argument to each attribute"""
-        if len(args) > 0:
+    def update(self, *args, **kwargs):
+        """
+        Public method to assign an argument to each attribute
+        args: kind of single pointer to a dictionary
+        kwargs: dictionary with key/value args
+        """
+        if args and len(args) > 0:
             for index, arg in enumerate(args):
                 if index == 0:
                     self.id = arg
@@ -108,3 +112,15 @@ class Rectangle(Base):
                     self.x = arg
                 if index == 4:
                     self.y = arg
+        elif kwargs and len(kwargs) > 0:
+            for k, v in kwargs.items():
+                if k == 'id':
+                    self.id = v
+                if k == 'width':
+                    self.width = v
+                if k == 'height':
+                    self.height = v
+                if k == 'x':
+                    self.x = v
+                if k == 'y':
+                    self.y = v
