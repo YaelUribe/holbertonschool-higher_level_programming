@@ -14,7 +14,7 @@ class Rectangle(Base):
         self.height = height
         self.x = x
         self.y = y
-        super().__init__(id)  #Calling superClass id attribute
+        super().__init__(id)  # Calling superClass id attribute
 
     @property
     def width(self):
