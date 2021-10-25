@@ -81,3 +81,11 @@ class Rectangle(Base):
         rectangle instance with "#" Character"""
         for g in range(self.height):
             print("#"*self.width)
+
+    def __str__(self):
+        """prints the requested message"""
+        return("[Rectangle] ({:d}) {:d}/{:d} - {:d}/{:d}").format(self.id,
+                                                                  self.x,
+                                                                  self.y,
+                                                                  self.width,
+                                                                  self.height)
