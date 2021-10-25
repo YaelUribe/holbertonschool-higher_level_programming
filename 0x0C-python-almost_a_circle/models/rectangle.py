@@ -126,6 +126,8 @@ class Rectangle(Base):
                     self.y = v
 
         def to_dictionary(self):
-            """Returns Dictionary repr of Square"""
+            """
+            Returns Dictionary repr of Square
+            """
             attributes = ['id', 'width', 'height', 'x', 'y']
             return {key: getattr(self, key) for key in attributes}
