@@ -26,6 +26,6 @@ class Base:
         repretsentation of list_dictionaries
         """
         if list_dictionaries is None:
-            list_dictionaries = []
+            list_dictionaries = "[]"
         else:
             return json.dumps(list_dictionaries)
