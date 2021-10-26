@@ -68,3 +68,20 @@ class Base:
             dummy = cls(1)
         dummy.update(**dictionary)
         return dummy
+
+    @classmethod
+    def load_from_file(cls):
+        """
+        Class method load_from_file, returns a list of instances
+        """
+        filename = str(cls.__name__) + ".json"
+        nuJson = []
+        try:
+            with open(filename,'r', encoding='utf8') as f:
+                readf = f.read()
+                nuf = cls.from_json_string(readf)
+                for diction in nuf:
+                    nuJson.append(cls.create(**diction))
+                return nuJson
+        except FileNotFoundError:
+            return []
