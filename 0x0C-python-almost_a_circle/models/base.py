@@ -45,3 +45,13 @@ class Base:
                 for x in list_objs:
                     nuJson.append(x.to_dictionary())
                 f.write(cls.to_json_string(nuJson))
+
+    @staticmethod
+    def from_json_string(json_string):
+        """
+        StaticMethod to return the list of JSON str repr
+        """
+        if json_string is None:
+            return "[]"
+        else:
+            return json.loads(json_string)
