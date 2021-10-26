@@ -77,7 +77,7 @@ class Base:
         filename = str(cls.__name__) + ".json"
         nuJson = []
         try:
-            with open(filename,'r', encoding='utf8') as f:
+            with open(filename, 'r', encoding='utf8') as f:
                 readf = f.read()
                 nuf = cls.from_json_string(readf)
                 for diction in nuf:
