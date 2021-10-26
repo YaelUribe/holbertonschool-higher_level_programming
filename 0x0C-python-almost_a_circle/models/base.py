@@ -52,6 +52,6 @@ class Base:
         StaticMethod to return the list of JSON str repr
         """
         if json_string is None:
-            return "[]"
+            return []
         else:
             return json.loads(json_string)
