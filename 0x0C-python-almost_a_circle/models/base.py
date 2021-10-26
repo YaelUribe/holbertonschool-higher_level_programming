@@ -36,4 +36,12 @@ class Base:
         writes the JSON str repr of list_objs
         to a file
         """
-        
+        filename = str(cls.__name__) + ".json"
+        nuJson = []
+        with open(filename, 'w', encoding='utf8') as f:
+            if list_objs is None:
+                f.write("[]")
+            else:
+                for x in list_objs:
+                    nuJson.append(x.to_dictionary())
+                f.write(cls.to_json_string(nuJson))
