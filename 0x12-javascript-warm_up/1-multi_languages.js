@@ -5,4 +5,4 @@ console.log(first);
 const second = 'Python is cool';
 console.log(second);
 const third = 'JavaScript is amazing';
-console.log(third, first);
+console.log(third);
