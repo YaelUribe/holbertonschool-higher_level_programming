@@ -1,14 +1,15 @@
 #!/usr/bin/node
 
-import { argv } from 'process';
+require('process');
 
-const arguments = process.argv;
-if (arguments === 0){
+const args = process.argv;
+
+if (args.length == 2){
 	console.log('No argument');
 }
-elif (arguments){
-	a
+else if (args.length == 3){
+	console.log('Argument found');
 }
-elif (){
-
+else {
+	console.log('arguments found');
 }
