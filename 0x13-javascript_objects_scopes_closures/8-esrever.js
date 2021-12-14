@@ -1,12 +1,9 @@
 #!/usr/bin/node
 
 exports.esrever = function (list) {
-	const reverser = [];
-	for (const i in list) {
-	  if (list[i] === searchElement) {
-		counter[i] = list[i];
-	  }
-	}
-	return counter;
-  };
-  
+  const reverser = [];
+  for (let i = list.length - 1; i >= 0; i--) {
+    reverser.push(list[i]);
+  }
+  return reverser;
+};
