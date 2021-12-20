@@ -24,7 +24,7 @@ if __name__ == "__main__":
     Base.metadata.create_all(engine)  # create metadata
     Session = sessionmaker(bind=engine)  # instance for engine
     session = Session()  # initializing
-    querying = session.query(State).filter(State.name == argv[4] )\
+    querying = session.query(State).filter(State.name == argv[4])\
         .first()  # creating query
     if querying is None:
         print("Not found")
