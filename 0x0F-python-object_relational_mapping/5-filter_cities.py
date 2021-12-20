@@ -27,5 +27,4 @@ if __name__ == "__main__":
                     WHERE states.name LIKE BINARY %(state)s
                     ORDER BY cities.id ASC""", {'state': state})
     values = cursor.fetchall()
-    for i in values:
-        print("".join(i[0]), end=", ")
+    print(", ".join(map(lambda i: i[0], values)))
