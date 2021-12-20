@@ -24,7 +24,8 @@ if __name__ == "__main__":
     Base.metadata.create_all(engine)  # create metadata
     Session = sessionmaker(bind=engine)  # instance for engine
     session = Session()  # initializing
-    querying = session.query(State).filter(State.name.like('%a%')).order_by(State.id)  # creating query
+    querying = session.query(State).filter(State.name.like('%a%'))\
+        .order_by(State.id)  # creating query
     if querying is None:
         print("\n")
     for i in querying:
