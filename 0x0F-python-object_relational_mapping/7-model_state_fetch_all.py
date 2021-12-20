@@ -27,4 +27,4 @@ if __name__ == "__main__":
     col = querying.order_by(State.id).all()
 
     for i in col:
-        print("{}: {}".format(i.id, col.name))
+        print("{}: {}".format(i.id, i.name))
