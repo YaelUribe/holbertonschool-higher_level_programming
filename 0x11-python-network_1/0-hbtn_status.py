@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-""" Module: hbtn_status"""
+"""Script to fetch a given URL
+   using urliib.request"""
 import urllib.request
 
 
