@@ -6,8 +6,7 @@ from urllib import parse, request
 if __name__ == "__main__":
     email = sys.argv[2]
     content = parse.urlencode({'email': email})
-    content = content.encode('utf-8')
+    content = content.encode('ascii')
     with request.urlopen(sys.argv[1], content) as response:
-        html = response.read()
-        html = response.decode('utf-8')
+        html = response.read().decode('utf-8')
     print(html)
