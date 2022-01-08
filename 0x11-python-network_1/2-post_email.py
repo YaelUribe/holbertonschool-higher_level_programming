@@ -10,4 +10,3 @@ if __name__ == "__main__":
         html = response.read()
         html = response.decode('utf-8')
     print(html)
-
